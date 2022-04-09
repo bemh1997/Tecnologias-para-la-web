@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html  lang ="es">
+    <head>
+        <title>Ejemplo 6 de canvas</title>
+		<!--archivo: ejemp3_canvas.html--> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="html, JavaScript, canvas"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="Ejemplo 6 dibujando circulos en JavaScript"/>
+		<meta name="robots" content="index"/>
+    </head>
+    <body>
+        <canvas id="lienzo6" width="400" height="200" style="border: 1px solid #d3d3d3">
+            Su navegador no soporta canvas
+        </canvas>
+        <script>
+            var c = document.getElementById("lienzo6");
+            var ctx = c.getContext("2d");
+
+            ctx.beginPath();
+            ctx.arc(190,100,60,0, 2*Math.PI);
+            ctx.strokeStyle="#5488E0";
+            ctx.stroke();
+        </script>    
+    </body>
+</html>

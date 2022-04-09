@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html  lang ="es">
+    <head>
+        <title>Ejemplo 5 de canvas</title>
+		<!--archivo: ejemp3_canvas.html--> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="html, JavaScript, canvas"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="Ejemplo 4 dibujando rectangulos en JavaScript"/>
+		<meta name="robots" content="index"/>
+    </head>
+    <body>
+        <canvas id="lienzo5" width="500" height="260"></canvas>
+        <script>
+            var c = document.getElementById("lienzo5");
+            var ctx = c.getContext("2d");
+
+            ctx.fillStyle = "#123456";
+            ctx.fillRect(30,10,50,100);
+            ctx.strokeStyle = 'red';
+            ctx.strokeRect(70,32,100,50);
+            ctx.fillRect(145,25,70,70);
+            ctx.fillStyle = "rgba(220, 220, 10, 0.7)";
+            ctx.fillRect(180,10,100,100);
+            ctx.clearRect(30,10,20,20);
+            ctx.strokeRect(190,20,80,80);
+        </script>    
+    </body>
+</html>

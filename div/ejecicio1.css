@@ -1,0 +1,51 @@
+.top {
+	height: 100px;
+	width: 97%;
+	background-color: red;
+	position: absolute;
+	left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.middleLeft{
+	height: 450px;
+	width: 30%;
+	background-color: green;
+	position: absolute;
+	left: 10px;
+	top: 130px;
+	margin: auto;
+}
+
+.middleTop{
+	height: 350px;
+	width: 30%;
+	background-color: yellow;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 130px;
+	margin: auto;
+}
+
+.middleBottom{
+	height: 50px;
+	width: 30%;
+	background-color: red;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 490px;
+	margin: auto;
+}
+
+.middleRight{
+	height: 450px;
+	width: 30%;
+	background-color: blue;
+	position: absolute;
+	right: 10px;
+	top: 130px;
+	margin: auto;
+}

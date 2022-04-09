@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html  lang ="es">
+    <head>
+        <title>Ejemplo 4 de canvas</title>
+		<!--archivo: ejemp3_canvas.html--> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="html, JavaScript, canvas"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="Ejemplo 4 dibujar un cuadrado"/>
+		<meta name="robots" content="index"/>
+    </head>
+    <body>
+        <canvas id="lienzo4" width="500" height="260"></canvas>
+        <script>
+            var contexto= document.getElementById("lienzo4");
+            var gctx = contexto.getContext("2d");
+
+            //linea1
+            gctx.beginPath();
+            gctx.lineCap='round';
+            gctx.moveTo(20,20);
+            gctx.lineTo(200,20);
+            gctx.lineWith=10;
+            gctx.strokeStyle = 'red';
+            gctx.stroke();
+            
+            //linea2
+            gctx.beginPath();
+            gctx.lineCap='round';
+            gctx.moveTo(20,20);
+            gctx.lineTo(20,200);
+            gctx.strokeSyle='rgba(85,63,191,1)';
+            gctx.stroke();
+
+            //linea3
+            gctx.beginPath();
+            gctx.lineCap='square';
+            gctx.lineWith=15;
+            gctx.moveTo(200,20);
+            gctx.lineTo(200,200);
+            gctx.strokeSyle='rgba(242, 245, 50, 1)';
+            gctx.stroke();
+
+            //linea4
+            gctx.beginPath();
+            gctx.lineCap='square';
+            gctx.lineWith=15;
+            gctx.moveTo(20,200);
+            gctx.lineTo(200,200);
+            gctx.strokeSyle='rgba(242, 245, 50, 1)';
+            gctx.stroke();
+
+        </script>    
+    </body>
+</html>

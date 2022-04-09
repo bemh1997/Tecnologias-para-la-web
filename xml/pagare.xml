@@ -1,0 +1,41 @@
+<xml version="1.0" encoding="UTF-8">
+<pagare>
+    <numero_folio><numero_folio>
+    <leyenda>Bueno por $
+         <cantidad_dinero></cantidad_dinero>
+    </leyenda>
+    <lugar_expedicion></lugar_expedicion>
+    <fecha_expedicion></fecha_expedicion>
+    <leyenda>
+        Debe(mos) y pagaré(mos) incondicionalmente por este Pagaré a la orden de
+        <nombre_acreedor></nombre_acreedor>
+        en
+        <lugar_de_pago></lugar_de_pago>
+        el
+        <fecha_de_pago></fecha_de_pago>
+        la cantidad de:
+        <cantidad_dinero_letra></cantidad_dinero_letra>
+        valor recibido a mi (nuestra) entera satisfacción. Este pagaré
+		forma parte de una serie numerada del 1 al 
+        <numero_folio_serie></numero_folio_serie>
+        y todos están sujetos a la condición de que al no pagarse
+		cualquiera de ellos a su vencimiento, serán exigibles
+		todos los que sigan en número, además de los ya vencidos,
+		desde la fecha de vencimiento de este documento hasta el día de
+		su liquidación, causará intereses moratorios al tipo de
+        <porcentaje_interes></porcentaje_interes>
+        % mensual, pagadero en esta ciudad juntamente con el principal.
+    </leyenda>
+    <datos_del_deudor>
+        <leyenda>
+            Nombre:<nombre_deudor></nombre_deudor>
+            Direccion:<direccion_deudor></direccion_deudor>Telefono:<telefono_deudor></telefono_deudor>
+            Poblacion:<poblacion_deudor></poblacion_deudor>
+
+            Acepto(amos) 
+            Firma(s):<firma_deudor></firma_deudor>
+        </leyenda>
+    </datos_del_deudor>
+    <leyenda>escriba al reverso los datos personales y firma(s) del(os) aval(es).
+    </leyenda>
+</pagare>

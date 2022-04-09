@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html  lang ="es">
+    <head>
+        <title>Ejemplo 10 de canvas</title>
+		<!--archivo: ejemp3_canvas.html--> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="html, JavaScript, canvas"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="Ejemplo 10 dibujando Lineas en JavaScript"/>
+		<meta name="robots" content="index"/>
+    </head>
+    <body>
+        <canvas id="lienzo10" width="400" height="200" style="border: 1px solid black">
+            Su navegador no soporta canvas
+        </canvas>
+        <script>
+            var canvas= document.getElementById("lienzo10");
+            var ctx = canvas.getContext("2d");
+
+               
+            //lineas rojas sin una ruta cerrada
+            ctx.beginPath();
+            ctx.moveTo(10,10);
+            ctx.lineTo(390,10);
+            ctx.lineTo(390,30);
+            ctx.lineTo(10,30);
+            ctx.lineWidth=10;
+            ctx.lineJoin = 'beve1';
+            ctx.lineCap = 'butt';
+            ctx.strokeStyle = 'red';
+            ctx.stroke();
+            
+            //lineas narajas sin ruta cerrada
+            ctx.beginPath();
+            ctx.moveTo(40,75);
+            ctx.lineTo(40,55);
+            ctx.lineTo(360,55);
+            ctx.lineTo(360,75);
+            ctx.lineWidth = 20;
+            ctx.lineJoin = 'round';
+            ctx.lineCap = 'round';
+            ctx.strokeStyle = 'orange';
+            ctx.stroke();
+            
+            //lineas verdes con una ruta cerrada
+            ctx.beginPath();
+            ctx.moveTo(10,100);
+            ctx.lineTo(390,100);
+            ctx.lineTo(390,130);
+            ctx.closePath();
+            ctx.lineWidth = 10;
+            ctx.lineJoin = 'miter';
+            ctx.strokeStyle = 'green';
+            ctx.stroke();
+            
+            //lineas azules sin una ruta cerrada
+            ctx.beginPath();
+            ctx.moveTo(40,140);
+            ctx.lineTo(360, 190);
+            ctx.lineTo(360,140);
+            ctx.lineTo(40,190);
+            ctx.lineWidth = 5;
+            ctx.lineCap = 'square';
+            ctx.strokeStyle = 'blue';
+            ctx.stroke();
+
+        </script>    
+    </body>
+</html>

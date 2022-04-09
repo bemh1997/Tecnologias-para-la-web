@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html  lang ="es">
+    <head>
+        <title>Formulario</title>
+		<!--archivo: ejemplo1_formulario.html--> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="formulario, html"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="Ejemplo de formulario"/>
+		<meta name="robots" content="index"/>
+        <style>
+            span{
+                margin-right: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" method="get" autofocus>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Humberto"><br/>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" value="Dlib"><br><br>
+            <select>
+                <option value="1">Internet Explorer</option>
+                <option value="2">Firefox</option>
+                <option value="3">Safari</option>
+                <option value="4">Opera</option>
+                <option value="5">Google Chrome</option>
+            </select>
+            <br/>
+            <p> E-mail: <br/>
+                <input type="" required>
+                <br/>
+                Ingrese contraseña
+                <input type="password" name="clave"> <br/>
+            </p>
+            <p>Tu navegador preferido?
+                <select>
+                <option value="IE"selected>Internet Explorer</option>
+                <option value="FF">Firefox</option>
+                <option value="S">Safari</option>
+                <option value="0">0pera</option>
+                <option value="GC">Google Chrome</option>
+                </select>
+            </p>
+            <br/>
+            <p>Cuantos años tienes?
+                <select size="4" multiple>
+                    <option>Menos de 20 años</option>
+                    <option>De 20 a 40 años</option>
+                    <option>De 40 a 60 años</option>
+                    <option>Más de 60 años</option>
+                    <option>Más de 70 años</option>
+                    <option>Más de 80 años</option>
+                    <option>Más de 90 años</option>
+                </select>
+            </p>
+            <br/>
+            <p>Género:
+                <input type="radio" name="genero">Masculino
+                <input type="radio" name="genero">Femenino
+            </p>
+            <p>Su pizza con: <br/>
+                <input type="checkbox">Mozarrella<br/>
+                <input type="checkbox">Jamón<br/>
+                <input type="checkbox">Salsa de tomate<br/>
+                <input type="checkbox">Pimientos<br/>
+                <input type="checkbox">Champiñones<br/>
+                <input type="checkbox" checked>Olivas negras<br/>
+                <input type="checkbox">Salsa Picante<br/>
+            </p>
+            <p>URL de su sitio web:
+                <input type="url" name="web"> <br/> 
+                Ingrese numero<input type="number" name="q" min="2" max="l0" step="2" value="2">
+            </p>
+            <p>
+                <fieldset>Fecha de llegada: <input type="date" name="in"><br> Fecha de
+                    partida:<input type="date" name="out"></fieldset> <br/>
+                    Día y hora de llegada:
+                    <input type="datetime" name="in"><br/>
+                    Día y hora de partida:
+                    <input type="datetime" name="on"><br/>
+                    <input type="datetime" name="fechayhora"><br/>
+                    <input type="week" name="fechayhora"><br/>
+                    Hora actual:
+                    <input type="time" name="tiempo"> <br/>
+                    Rango<input type="range"  name="rango1" min="10" max="100" step="10" value="10"><br/>
+            </p>
+            <p>
+                <input name="cursor" type="range" min="1" max="5"
+                value="3" step="1" style="margin-top:10px;
+                width:155px;"><br>
+                <div style="margin-top: -2px">
+                <span style="margin-left:2px;">1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                </div>
+            </p>
+            <p>
+                <input type="button" name="chiste" value="Cuentame un chiste"><br/>
+                color que te gusta: <input type="color"><br/>
+                mes que te gusta:<input type="month"><br/>
+                <input type="image" src="button1.png"><br/>
+                <input type="search"><br/>
+                <input type="img">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </p>
+        </form> 
+    </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejemplo Script con formulario</title>
+		<!--archivo: ej6_maquetado_libro_matematicas_con_forumularios.html-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="html, css, maquetado, maquetación, JavaScript"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="Ejemplo de JS con formulario"/>
+		<meta name="robots" content="index"/>
+		<style>
+			* {          /* selector universal*/
+			  box-sizing: border-box;
+			}
+
+			body { /* selector de elemento */
+			  font-family: Arial, Helvetica, sans-serif; /* tipografia o familia de letras o fuente */
+			}
+
+			/* Estilo del encabezado a nivel de página Web */
+			header {  /* selector de elemento */
+			  background-color: #A8CAF0; /* establecer color de fondo */
+			  padding: 30px;  /* se extablece distancia del borde al contenido */
+			  text-align: center; /* alineación del texto */
+			  font-size: 35px; /* tamaño del texto */
+			  color: white; /* color de texto */
+			} 
+			/* Crear dos columnas / cajas que flotan una al lado de la otra */
+			nav { /* selector de elemento */
+			  float: left; 
+			  width: 30%;  /* ancho de la caja de nav */
+			  height: 600px; /* solo para demostración, debe ser eliminado */
+			  background: #ccc; /* establecer color de fondo */
+			  padding: 20px; /* se extablece distancia del borde al contenido */
+			}
+			/* Estilo de la lista dentro del menú 
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}*/
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			  height: 600px; /* solo para demostración, debe ser eliminado */
+			}
+			/* Borrar flotadores después de las columnas */
+			section::after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+			/* Style the footer */
+			footer {
+			  background-color: #A8CAF0;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+			/*Capa responsiva - hace las dos columnas/las cajas se 
+			  apilan una encima de la otra en lugar de una al lado 
+			  de la otra, en pantallas pequeñas */
+			@media (max-width: 600px) {
+			  nav, article {
+				width: 100%;
+				height: auto;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+		  <h2>Matemáticas primer grado de primaria</h2>
+		  <h3>Equipo 7</h3>
+		</header>
+		<section>
+		  <nav>
+			<ul>
+			  <li><a href="https://libros.conaliteg.gob.mx/2021/P1MAA.htm#page/1" target="iframe_a">JavaScript</a></li>
+			  <br/>
+			  <li><a href="https://libros.conaliteg.gob.mx/2021/P1MAA.htm#page/10" target="iframe_a">Bloque 1</a></li>
+				<ul type="square">	
+					<li><a href="ejemplo_bloque1.html" target="iframe_a">Formulario bloque 1</a></li>
+					<li><a href="ejercicio8_bloque1.html" target="iframe_a">Formulario página 19</a></li>
+					<li><a href="Bloque01_01_02.html" target="iframe_a">Trayecto 1 Ejercicio 2</a></li>
+					<li><a href="bloque1_p60.html" target="iframe_a">Formulario página 60</a></li>
+				</ul>
+				<br/>
+			  <li><a href="https://libros.conaliteg.gob.mx/2021/P1MAA.htm#page/77" target="iframe_a">Bloque 2</a></li>
+			  
+			  <br/>
+			  <li><a href="https://libros.conaliteg.gob.mx/2021/P1MAA.htm#page/143" target="iframe_a">Bloque 3</a></li>
+			</ul>
+		  </nav>
+		  <article>
+			 <iframe title="iframe_a" src="" name="iframe_a" width="900px" height="500px" frameborder="0">
+			</iframe>
+		  </article>
+		</section>
+		<footer>
+		  <p>Bernal Mondragon Humberto</p>
+		</footer>
+	</body>
+</html>

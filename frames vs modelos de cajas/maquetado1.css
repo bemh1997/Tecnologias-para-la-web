@@ -1,0 +1,109 @@
+* {    /*selector universal*/
+    margin: 0;  /*margen de cero*/
+    padding: 0%;  /*relleno de cero*/
+    -webkit-animation-sizing: border-box;
+	/* -webkit es motor de navegación web de código libre*/
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#contenedor{  /*selector de identificador*/
+	/*se recomienda dar medidas absolutas o exactas*/
+	width: 1200px; /*ancho de capa o de caja*/
+	height: 1000px; /*alto de capa o de caja*/
+	background: #b0c4de; /* color de fondo otra opción para poner color es 
+	rgb(176,196,222) o lightsteelblue*/
+	margin: 0.5em auto; /*se centra en la página web de maanera automática*/
+	padding: 0.5em;
+}
+
+#header{  /*selector de identificador*/
+	height: 20%; /*alto de capa o de caja*/
+	background: #6495ed; /* color de fondo otra opción para poner color es 
+	rgb(100,149,237) o cornflowerblue*/
+	border-radius: 1em; /*redondear las esquinas*/
+	margin: 1em;
+}
+
+#nav{  /*selector de identificador*/
+	height: 10%; /*alto de capa o de caja*/
+	background: #191970; /* color de fondo otra opción para poner color es 
+	rgb(25,25,112) o midnightblue*/
+	border-radius: 1em; /*redondear las esquinas*/
+	margin: 1em;
+}
+
+#contenido{  /*selector de identificador*/
+	height: 53%; /*alto de capa o de caja*/
+	/*background: #bcd4e6; color de fondo otra opción para poner color 
+	es rgb(188,212,230) o Pale Aqua*/
+	/*no se le da margen para que quede pegado*/
+}
+
+#footer{  /*selector de identificador*/
+	height: 10%; /*alto de capa o de caja*/
+	background: #abcdef; /* color de fondo otra opción para poner color 
+	es rgb(171,205,239) o Pale Cornflower Blue*/
+	border-radius: 1em; /*redondear las esquinas*/
+	margin: 1em;
+}
+
+#section{  /*selector de identificador*/
+	width: 65%; /*ancho de capa o de caja*/
+	height: 95%; /*alto de capa o  de caja*/
+	background: #4169e1; /* color de fondo otra opción para poner color 
+	es rgb(65,105,225) o royalblue*/
+	border-radius: 1em; /*redondear las esquinas*/
+	float:left; /*ubica un elemento al lado izquierdo o derecho de su 
+	contenedor, permitiendo a los elementos de texto y en línea aparecer 
+	a su costado. El elemento es removido del normal flujo de la página*/
+	margin-left: 1em; /*margen izquierdo*/
+}
+
+#aside{  /*selector de identificador*/
+	width: 30%; /*ancho de capa o de caja*/
+	height: 95%; /*alto de capa*/
+	background: #4169e1; /* color de fondo otra opción para poner color 
+	es rgb(65,105,225) o royalblue*/
+	border-radius: 1em; /*redondear las esquinas*/
+	float:right; /*ubica un elemento al lado izquierdo o derecho de su 
+	contenedor, permitiendo a los elementos de texto y en línea aparecer 
+	a su costado. El elemento es removido del normal flujo de la página*/
+	margin-right: 1em; /*margen izquierdo*/
+}
+
+.article1{  /*selector de clase*/
+	width: 95%; /*ancho de capa*/
+	height: 20%; /*alto de capa*/
+	background: #abcdef; /* color de fondo otra opción para poner 
+	color es rgb(171,205,239) o Pale Cornflower Blue*/
+	border-radius: 1em; /*redondear las esquinas*/
+	margin: 1em; /*margen izquierdo*/
+} 
+
+.article2{  /*selector de clase*/
+	width: 95%; /*ancho de capa*/
+	height: 20%; /*alto de capa*/
+	background: #abcdef; /* color de fondo otra opción para poner 
+	color es rgb(171,205,239) o Pale Cornflower Blue*/
+	border-radius: 1em; /*redondear las esquinas*/
+	margin: 1em; /*margen izquierdo*/
+}
+
+.article3{  /*selector de clase*/
+	width: 95%; /*ancho de capa*/
+	height: 20%; /*alto de capa*/
+	background: #abcdef; /* color de fondo otra opción para poner 
+	color es rgb(171,205,239) o Pale Cornflower Blue*/
+	border-radius: 1em; /*redondear las esquinas*/
+	margin: 1em; /*margen izquierdo*/
+}
+
+.article4{  /*selector de clase*/
+	width: 95%; /*ancho de capa*/
+	height: 20%; /*alto de capa*/
+	background: #abcdef; /* color de fondo otra opción para poner 
+	color es rgb(171,205,239) o Pale Cornflower Blue*/
+	border-radius: 1em; /*redondear las esquinas*/
+	margin: 1em; /*margen izquierdo*/
+}

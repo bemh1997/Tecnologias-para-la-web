@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html  lang ="es">
+    <head>
+        <title>Script 1</title>
+		<!--archivo: script.html--> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="html, script"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="ejercicio de script"/>
+		<meta name="robots" content="index"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            let x = 2022;
+
+            alert("Hola año "+ x);
+
+            const anonima = function(){
+                alert("Función anónima");
+            }
+
+            function suma(a,b){
+                return a + b;
+            }
+
+            let suma2 = function(a,b){
+                return a + b;
+            }
+
+            let suma3 = (a,b)=>{
+                return a + b;
+            }
+
+            alert(suma(7,6));
+            alert(anonima());
+            alert(suma2(49,23));
+            alert(suma3(20,7));
+
+            let cadena = "Bienvenidos a ESCOM";
+            let lenghtcadena = cadena.length;
+            alert("La longitud de la variable 'cadena' es de: "+ lenghtcadena);
+            let miArreglo = ["ESCOM","UPIITA","UPIICSA","UPIIC","UPITZ"]
+            console.log(miArreglo[3]);
+            console.log(miArreglo.length);
+
+            miArreglo = 3.1415
+            alert(miArreglo);
+
+            let miObjeto ={
+                nombre: "ESCOM",
+                fundacion: 1993,
+                director: "Andres OC",
+                oferta:["ISC","IIA","LCD"],
+                m:function(){
+                    return "Escuela: "+this.nombre +". Fundación "+ this.fundacion+".";
+                },
+                o:{
+                    o1:"UPIITA",
+                    o2:"1996",
+                    o3:"Juan Perez"
+                }
+            }
+
+            alert(miObjeto.nombre);
+            alert(miObjeto.fundacion);
+            alert(miObjeto.oferta[1]);
+            let temp = miObjeto.m();
+            alert(temp);
+
+            alert(miObjeto.o.o3);
+
+        </script>
+    </head>
+    <body>    
+    </body>
+</html>

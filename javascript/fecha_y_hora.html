@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html  lang ="es">
+    <head>
+        <title>Ejercicio fecha y hora local</title>
+		<!--archivo: fecha_y_hora.html--> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="html, css, JavaScript"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="ejercicio de JavaScript del lado del cliente: Fecha y hora local"/>
+		<meta name="robots" content="index"/>
+        <style type="text/css">
+            p{
+                text-align: justify;
+
+            }
+
+            h1{
+                text-align: center;
+                color: #279B94;
+                text-decoration: underline overline dotted #9b278c;
+            }
+            h2{
+                text-align: center;
+                color: #359b27;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> JavaScript del lado del cliente</h1>
+        <h2>Fecha y hora de su computadora</h2>
+        <hr>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+            Haga clic para mostrar la fecha y la hora con JavaScript
+        </button>
+        <p id="demo"></p>
+    </body>
+</html>

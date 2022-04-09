@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html  lang ="es">
+    <head>
+        <title>Ejemplo 7 de canvas</title>
+		<!--archivo: ejemp3_canvas.html--> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="html, JavaScript, canvas"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="Ejemplo 7 dibujando triangulos en JavaScript"/>
+		<meta name="robots" content="index"/>
+    </head>
+    <body>
+        <canvas id="lienzo7" width="1000" height="1000">
+        </canvas>
+        <script>
+            window.addEventListener('load',()=>{
+                let triangulo = document.getElementById("lienzo7");
+                let ctx = triangulo.getContext("2d");
+
+                ctx.beginPath();
+                ctx.moveTo(100,50);
+                ctx.lineTo(50,150);
+                ctx.lineTo(150,150);
+                ctx.fill();
+            });
+                
+        </script>    
+    </body>
+</html>

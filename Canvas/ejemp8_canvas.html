@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html  lang ="es">
+    <head>
+        <title>Ejemplo 8 de canvas</title>
+		<!--archivo: ejemp3_canvas.html--> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="html, JavaScript, canvas"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="Ejemplo 8 dibujando rectangulo(alternativo) en JavaScript"/>
+		<meta name="robots" content="index"/>
+    </head>
+    <body>
+        <canvas id="lienzo8" width="300" height="100" style="border: 1px solid black">
+            Su navegador no soporta canvas
+        </canvas>
+        <script>
+            var canvas = document.getElementById("lienzo8");
+            var ctx = canvas.getContext("2d");
+
+            ctx.fillStyle ="yellow";
+            ctx.fillRect(5, 10, 200, 75);
+            ctx.strokeStyle="royalblue";
+            ctx.lineWidth = 6;
+            ctx.strokeRect(4, 9, 201, 76);
+        </script>    
+    </body>
+</html>

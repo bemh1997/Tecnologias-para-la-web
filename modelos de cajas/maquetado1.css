@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0%; /*relleno de cero*/
+    -webkit-animation-sizing: border-box; 
+    /*el rpefi -webkit- es motor de navegación de código libre para Safari y Chrome*/
+    -moz-box-sizing: border-box;
+    /*el rpefi -moz- es motor de navegación de código libre para Mozilla*/
+    /*Otros prefijos son -O es motor de navegación web de código libre para Opera
+    -ms- es motor de navegación web de código libre para Internet Explorer
+    -khtml- es motor de navegación we de código libre para konkeror*/
+    box-sizing: border-box;
+    width: border-box;
+    height: border-box;
+}
+
+#contenedor{
+    /*Se recomiedan dar medidas absolutas o exactas*/
+    height:800px;
+    margin: 0.5em auto;
+    padding: 0.5em;
+
+}
+
+#header{
+    height: 20%;
+    background: #abcdef;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+#nav{
+    height: 10%;
+    background: #191970;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+#contenido{
+    height: 50%;
+}
+#section{
+    width: 65%;
+    height: 100%;
+    background: #4169e1;
+    border-radius: 1em;
+    float: left;
+    margin-left: 1em;
+    text-align: left;
+}
+#aside{
+    width: 26%;
+    height: 100%;
+    background: #4169e1;
+    border-radius: 1em;
+    float: right;
+    margin-right: 1em;
+}
+#footer{
+    height: 10%;
+    background: #abcdef;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+.article1{
+    width: 90%;
+    height: 18%;
+    background: #abcdef;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+.article2{
+    width: 90%;
+    height: 18%;
+    background: #abcdef;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+.article3{
+    width: 90%;
+    height: 18%;
+    background: #abcdef;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+.article4{
+    width: 90%;
+    height: 18%;
+    background: #abcdef;
+    border-radius: 1em;
+    margin: 1em;
+}
+

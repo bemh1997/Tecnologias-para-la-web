@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding:0%;
+    -webkit-animation-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #cecece;
+}
+#content{
+    width: auto; 
+    height: 1000px;
+    margin: 0;
+    padding: 0.5em;
+}
+#header{
+    background: #6495ed;
+    height: 10%;
+    margin: 30px auto;
+    border: 0.5em;
+    margin: 0.5em;
+}
+#nav{
+    height: 5%;
+    margin: 30px auto;
+    background-color: honeydew;
+    border-radius: 1em;
+    margin: 1em;
+}
+#nav ul{
+    list-style: none;
+}
+.menu>li{
+    display: inline-block;
+}
+.menu>li>a {
+    display: block;
+    padding: 15px 20px;
+    color: #6495ED;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+.menu li a :hover{
+    color: #bdb76b;
+    transition: all .3;
+}
+
+.submenu{
+    position: absolute;
+    background: #f5deb3;
+    width: auto;
+    display: none;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: #6495ED;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.menu li:hover .submenu{
+    color: #bdb76b;
+    transition: all .3;
+}
+
+#contenido{
+    height: 53%;
+}
+
+#footer{
+    height: 10%;
+    background: #abcdef;
+    border-radius: 1em;
+    margin: 1em;
+}
+#section{
+    width: 65%;
+    height: 95%;
+    background: #4169e1;
+    border-radius: 1em;
+    float: left;
+    margin-left: 1em;
+    padding: 20px;
+}
+
+#aside{
+    width: 30%;
+    height: 95%;
+    background: #4169e1;
+    border-radius: 1em;
+    float: right;
+    margin-right: 1em;
+}

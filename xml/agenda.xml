@@ -1,0 +1,15 @@
+<xml version="1.0" encoding="UTF-8">
+<agenda idioma="texto" tipo="personal | laboral">
+    <nombre apellido_paterno="texto" apellido_materno="texto" primer_nombre="texto" segundo_nombre="texto">
+        <telefono lada="numero" cadena="10" numero="digito"></telefono>
+        <celularlada="numero" cadena="10" numero="digito"></celular>
+        <direccion calle="texto" numero_interior="alfanumerico" numero_exterior="alfanumerico" cadena="5" cp="digito" colonia="alfanumerico" estado="texto">
+        <correo_electronico></correo_electronico>
+    </nombre>
+    <nombre apellido_paterno="texto" apellido_materno="texto" primer_nombre="texto" segundo_nombre="texto">
+        <telefono lada="numero" cadena="10" numero="digito"></telefono>
+        <celularlada="numero" cadena="10" numero="digito"></celular>
+        <direccion calle="texto" numero_interior="alfanumerico" numero_exterior="alfanumerico" cadena="5" cp="digito" colonia="alfanumerico" estado="texto">
+        <correo_electronico></correo_electronico>
+    </nombre>
+</agenda>

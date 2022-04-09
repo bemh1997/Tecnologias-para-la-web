@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html  lang ="es">
+    <head>
+        <title>Ejercicio de canvas</title>
+		<!--archivo: ejemp3_canvas.html--> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="html, JavaScript, canvas"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="Ejercicio dibujando rectangulos en JavaScript"/>
+		<meta name="robots" content="index"/>
+    </head>
+    <body>
+        <canvas id="diapositiva27" width="500" height="260"></canvas>
+        <script>
+            var d = document.getElementById("diapositiva27");
+            var dctx = d.getContext("2d");
+
+            dctx.fillStyle = 'red';
+            dctx.fillRect(0,0,500,40);
+            dctx.fillStyle = 'yellow'
+            dctx.fillRect(0,50,500,150);
+
+            dctx.clearRect(10,60,150,130);
+            dctx.clearRect(175,60,150,130);
+            dctx.clearRect(340,60,150,130);
+            
+            dctx.fillStyle = 'blue';
+            dctx.fillRect(180,65,140,80);
+            dctx.fillStyle = 'blue';
+            dctx.fillRect(180,150,140,35);
+
+        </script>    
+    </body>
+</html>

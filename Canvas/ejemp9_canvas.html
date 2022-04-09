@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html  lang ="es">
+    <head>
+        <title>Ejemplo 9 de canvas</title>
+		<!--archivo: ejemp3_canvas.html--> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="html, JavaScript, canvas"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="Ejemplo 9 dibujo animado en JavaScript"/>
+		<meta name="robots" content="index"/>
+        <style>
+            canvas{
+                display: block;
+                margin: auto;
+                align: center;
+            }
+            
+            body{
+                background-color: black;
+            }
+
+            p{
+                color: white;
+                text-align: center;
+            }
+
+            h1{
+                background-color: coral;
+                color: white;
+                text-decoration: underline overline dotted white;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <br>
+        <h1>CANVAS</h1>
+        <br><br><br>
+        <p>El canvas consiste en una región dibujable definida en el código
+            html con atributos de altura y ancho el código llaves creep puede 
+            accesder a la zona a través de un conjunto completo de funciones
+            similares a las de otras aves comunes de dibujo 20 permitiendo así
+            que los gráficos sean generados dinámicamente alguno de los usos 
+            previstos incluyen constrcción de gráficos animaciones juegos y
+            la composición de imágenes.
+        </p>
+        <br><br>
+        <img src="emoji.png" alt="canvas" width="300" height="300" style="margin-left: auto; margin-right: auto;">
+        <canvas id="emoji" width="306" height="378">
+            Su navegador no soporta elemento canvas.
+        </canvas>
+        <script>
+            var cnv = document.getElementById("emoji");
+            var ctx = cnv.getContext("2d");
+
+            var img = new Image();
+            img.src = 'emoji.png'
+            img.onload = function(){ctx.drawImage(img, 0,0)}
+            
+        </script>    
+    </body>
+</html>

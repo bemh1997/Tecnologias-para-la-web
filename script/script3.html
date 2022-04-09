@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html  lang ="es">
+    <head>
+        <title>Pagina 15</title>
+		<!--archivo: Script3.html--> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="html, css, JavaScript"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="ejercicio 3 de JavaScript del lado del cliente: Pagina 15"/>
+		<meta name="robots" content="index"/>
+        <script type="text/javascript" languaje="JavaScript">
+            function Form(){
+                var op;
+                do{
+                    op=prompt("¿Qué número tiene la  tarjeta que sostiene la niña?\n\n1 \n2  \n3 \n4","");
+                    if(op==3){
+                        alert("Respuesta correcta!!!");
+                        op=prompt("¿Qué número tiene la tarjeta que está más cerca del niño?\nSi no sabes, espera\n\n1 \n2 \n3.\n4 ","");
+                        if(op==2){
+                            alert("Respuesta correcta!!!");
+                            op=prompt("¿Qué número tiene la  tarjeta que sostiene el niño en la segunda imagen?\n\n1 \n3 \n6\n5","");
+                            if(op==5){
+                                alert("Respuesta correcta!!!");
+                                breaK;
+                            }else
+                                alert("Respuesta incorrecta :'c");
+                        }else
+                            alert("Respuesta incorrecta :'c");
+                    }else
+                        alert("Respuesta incorrecta :'c");
+                }while(op>0||op<5);
+            }
+        </script>
+    </head>
+    <body style="text-align: center">
+        <img src="pag15.png" alt="bloque1"  width="500" height="600"> <br>
+        <input type="button" value="Presiona para empezar el formulario" name="start" onclick="Form()">
+    </body>
+</html>

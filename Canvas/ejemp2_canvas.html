@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html  lang ="es">
+    <head>
+        <title>Ejemplo 2 de canvas</title>
+		<!--archivo: ejemp2_canvas.html--> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="html, JavaScript, canvas"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="Ejemplo 2 de canvas"/>
+		<meta name="robots" content="index"/>
+    </head>
+    <body>
+        <canvas id="lienzo2" width="500" height="260"></canvas>
+        <script>
+            var gctx= document.getElementById("lienzo2").getContext("2d");
+            gctx.beginPath();
+            gctx.lineCap='round';
+            gctx.moveTo(20,20);
+            gctx.lineTo(200,20);
+            gctx.stroke();
+            gctx.strokeSyle='rgba(153,127,0,0.5)';
+            gctx.stroke();    
+        </script>    
+    </body>
+</html>

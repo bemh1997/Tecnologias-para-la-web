@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html  lang ="es">
+    <head>
+        <title>Ejemplo de canvas</title>
+		<!--archivo: ejemp1_canvas.html--> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="html, JavaScript, canvas"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="Ejemplo de canvas"/>
+		<meta name="robots" content="index"/>
+    </head>
+    <body>
+        <canvas id="lienzo" width="500" height="260"></canvas>
+        <script>
+            var contexto= document.getElementById("lienzo").getContext("2d");
+            contexto.fillStyle='rgba(54,54,0,0.5)';
+            contexto.fillRect(300,25,100,100);//rectangulo
+            contexto.beginPath();
+            contexto.arc(300,10,114,Math.PI*1/2, Math.PI*3/2);//arco
+            contexto.lineWidth=15;
+            contexto.lineCap='round';
+            contexto.strokesStyle='rgba(153,127,0,0.5)';
+            contexto.stroke();
+        </script>    
+    </body>
+</html>

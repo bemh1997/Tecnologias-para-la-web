@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0%; /*relleno de cero*/
+    -webkit-animation-sizing: border-box; 
+    /*el rpefi -webkit- es motor de navegación de código libre para Safari y Chrome*/
+    -moz-box-sizing: border-box;
+    /*el rpefi -moz- es motor de navegación de código libre para Mozilla*/
+    /*Otros prefijos son -O es motor de navegación web de código libre para Opera
+    -ms- es motor de navegación web de código libre para Internet Explorer
+    -khtml- es motor de navegación we de código libre para konkeror*/
+    -ms-zoom-animation: border-box;
+    box-sizing: border-box;
+    width: border-box;
+    height: border-box;
+    text-align: center;
+}
+
+#contenedor{
+    /*Se recomiedan dar medidas absolutas o exactas*/
+    height:800px;
+    margin: auto;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background: #eceeeb;
+    font-size: 14pt;
+}
+
+#header{
+    height: 15%;
+    background: #abcdef;
+    border-radius: 1em;
+    margin: 1em;
+    padding-top: 5%;
+}
+
+#nav{
+    height: 10%;
+    background: #f098da;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+#contenido{
+    height: 50%;
+    padding-top: 5%;
+}
+#section{
+    width: 65%;
+    height: 100%;
+    background: #abcdef;
+    border-radius: 1em;
+    float: left;
+    margin-left: 1em;
+    text-align: left;
+}
+#aside{
+    width: 26%;
+    height: 100%;
+    background: #abcdef;
+    border-radius: 1em;
+    float: right;
+    margin-right: 1em;
+    padding-top: 25%;
+}
+#footer{
+    height: 10%;
+    background:#98ee70;
+    border-radius: 1em;
+    margin: 1em;
+    padding-top: 5%;
+}
+
+.article1{
+    width: 90%;
+    height: 18%;
+    background: #f098da;
+    border-radius: 1em;
+    margin: 1em;
+    padding-top: 5%;
+}
+
+.article2{
+    width: 90%;
+    height: 18%;
+    background: #f098da;
+    border-radius: 1em;
+    margin: 1em;
+    padding-top: 5%;
+}
+
+.article3{
+    width: 90%;
+    height: 18%;
+    background: #f098da;
+    border-radius: 1em;
+    margin: 1em;
+    padding-top: 5%;
+}
+
+.article4{
+    width: 90%;
+    height: 18%;
+    background: #f098da;
+    border-radius: 1em;
+    margin: 1em;
+    padding-top: 5%;
+}
+
+

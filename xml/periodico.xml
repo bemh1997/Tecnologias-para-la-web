@@ -1,0 +1,22 @@
+<xml version="1.0" encoding="UTF-8">
+<periodico>
+    <portada>
+        <cabecera>
+            <lema></lema>
+            <datos_tecnicos>
+                <fecha></fecha>
+                <web></web>
+                <anio></anio>
+                <edicion></edicion>
+                <precio></precio>
+            </datos_tecnicos>
+        </cabecera>
+        <sumario_noticias></sumario_noticias>
+        <noticia_principal_dia>
+            <foto_noticia></foto_noticia>
+            <pie_foto_noticia></pie_foto_noticia>
+        </noticia_principal_dia>
+        <noticias_importantes></noticias_importantes>
+        <publicidad></publicidad>
+    </portada>
+</periodico>

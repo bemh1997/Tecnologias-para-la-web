@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html  lang ="es">
+    <head>
+        <title>Maquetacion 2</title>
+		<!--archivo: ej2_maquetado.html--> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="html, css, maquetado,Maquetacion"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="ejercicio de maquetacion 2"/>
+		<meta name="robots" content="index"/>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            header{
+                background-color: #ABCAF0;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+
+            nav{
+                float: left;
+                width: 30%;
+                height: 373px;
+                background: #ccc;
+                padding: 20px;
+            }
+            nav ul{
+                list-style-type: none;
+                padding: 0;
+            }
+
+            article{
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+                height: 373px;
+            }
+
+            section::after{
+                content:"";
+                display: table;
+                clear: both;
+            }
+
+            footer{
+                background-color: #ABCAF0;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            /*Capar responsiva - hace las dos columnas/las cajas
+            se apican una encimade la otra en lugar de una al 
+            lado de la otra, en pantallas pequeñas*/
+            @media (max-width:600px){
+                    nav, article{
+                        width: 100%;
+                        height: auto;
+                    }
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Capas flotantes con CSS</h2>
+        <header>
+            <h2>Arquitecturas</h2>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li> 
+                        <a href="Arquitectura_monolitica.html" target="iframe_a">Arquitectura monolitica</a>
+                    </li>
+                    <li><a href="Arquitecturas_SOAP.html" target="iframe_a">Arquitectura SOAP</a>
+                    </li>
+                </ul>
+            </nav>
+            <article>
+                <iframe title="iframe_a" frameborder="0.0" src="" name="iframe_a" width="900px" height="250px">
+                </iframe>
+            </article>
+        </section>
+        <footer>Bernal Mondragon Humberto</footer>
+    </body>
+</html>

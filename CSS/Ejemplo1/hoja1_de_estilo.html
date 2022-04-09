@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html  lang ="es">
+    <head>
+        <title>Hoja 1 de estilo</title>
+		<!--archivo: hoja1_de_estilo.html--> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="html, css"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="Ejemplo hoja de estilo propiedades"/>
+		<meta name="robots" content="index"/>
+        <style>
+            * {    
+                margin: 0;  
+                padding: 0%;
+                -webkit-animation-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                
+            }
+
+            #content{
+                width: 1300px; 
+                height: 1000px;
+                margin: 0.5em auto;
+                padding: 0.5em;
+                -moz-border-radius: 15px;
+                border-radius: 15px;
+                border-top-left-radius: 100px 50px;
+                background: #c2c2c2;
+            }
+
+            #midiv{
+                border: 8px solid #000000;
+                -moz-border-colors:#CC0000 #BB0000 #AA0000 #990000 #880000  #660000 #550000; 
+                padding: 10px;
+                background: white;
+            }
+
+            #mi-div{
+                border:10px solid transparent;
+                padding: 15px;
+                border-image: url(border.png) 27 27 27 27 round round;
+                background: white;
+            }
+
+            #mi_div{
+                border:10px solid transparent;
+                padding: 15px;
+                border-image: url(border.png) 27 27 27 27 stretch stretch;
+                background: white;
+            }
+
+            #Sombra{
+                box-shadow: 10px 10px 5px #888; 
+                padding: 5px 5px 5px 15px;
+                background: white;
+            }
+            #Sombra_2{
+                box-shadow: -10px -10px 0px #000000; 
+                border-radius: 5px; 
+                padding: 5px 5px 5px 15px;
+                background: white;
+            }
+            #borderboximg{
+                border: 10px solid transparent; 
+                padding: 200px; 
+                background: url("blue.gif") top left no-repeat, url("save.gif") top right no-repeat, url("submit.gif")  bottom left no-repeat, url("done.gif") bottom right no-repeat;
+            }
+
+            #mid_div_hsl{
+                padding: 5px;
+                background-color:hsl(240,100%,50%);
+            }
+    </style>
+</head>
+<body style="text-align: center;">
+    <div id="content">
+        <div id="midiv"></div><br><br>
+        <div id="mi-div">Lorem ipsum dolor sit amet</div><br><br>
+        <div id="mi_div">Lorem ipsum dolor sit amet</div><br><br>
+        <div id="Sombra">This should be a nice grey lading shaadow under this box...</div><br><br>
+        <div id="Sombra_2">This should be a hard black shadow above this one, and the shadow should follow the rounded 
+            corners</div><br><br>
+        <div id="borderboximg">border-box</div> <br> <br>
+        <div id="mid_div_hsl">Colores</div><br><br>
+    </div>
+    </body>
+</html>

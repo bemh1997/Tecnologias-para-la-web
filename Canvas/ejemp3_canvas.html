@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html  lang ="es">
+    <head>
+        <title>Ejemplo 3 de canvas</title>
+		<!--archivo: ejemp3_canvas.html--> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="html, JavaScript, canvas"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="Ejemplo 2 de canvas"/>
+		<meta name="robots" content="index"/>
+    </head>
+    <body>
+        <canvas id="lienzo2" width="500" height="260"></canvas>
+        <script>
+            var contexto= document.getElementById("lienzo2");
+            var gctx = contexto.getContext("2d");
+        
+            //linea1
+            gctx.beginPath();
+            gctx.moveTo(20,20);
+            gctx.lineTo(200,20);
+            gctx.lineWidth=10;
+            gctx.lineCap='butt';
+            gctx.strokeStyle = 'rgba(255, 165, 0, 1)';
+            gctx.stroke();
+            
+            //linea2
+            gctx.beginPath();
+            gctx.moveTo(20,40);
+            gctx.lineTo(200,40);
+            gctx.lineWidth=10;
+            gctx.lineCap='round';
+            gctx.strokeStyle = 'rgba(25, 165, 0, 1)';
+            gctx.stroke();
+            
+            //linea3
+            gctx.beginPath();
+            gctx.moveTo(20,60);
+            gctx.lineTo(200,60);
+            gctx.lineWidth=10;
+            gctx.lineCap='square';
+            gctx.strokeStyle = 'rgba(255, 15, 0, 0.5)';
+            gctx.stroke();
+            
+
+        </script>    
+    </body>
+</html>

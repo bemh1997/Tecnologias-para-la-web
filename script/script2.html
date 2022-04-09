@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html  lang ="es">
+    <head>
+        <title>Adivinanzas</title>
+		<!--archivo: Script2.html--> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="html, css, JavaScript"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="ejercicio 2 de JavaScript del lado del cliente: Adivinanzas"/>
+		<meta name="robots" content="index"/>
+        <script type="text/javascript" languaje="JavaScript">
+            var op;
+            do{
+                op=prompt("Choco entre dos paredes,\nlate mi corazón.\nQuien no sepa mi nombre es un cabezón.\n\n1.- Aguacate.\n2.- Chocolate.\n3.- Caramelo.\n4.- Miel","");
+                if(op==2){
+                    alert("Respuesta correcta!!!");
+                    op=prompt("Blanca por dentro,\nverde por fuera.\nSi no sabes, espera\n\n1.- Sandia.\n2.- Manzana.\n3.- Pera.\n4.- Uva","");
+                    if(op==3){
+                        alert("Respuesta correcta!!!");
+                        op=prompt("Un señor gordito,\nmuy coloradito,\nno toma café,\n siempre toma té.\n\n1.- Un señor gordito.\n2.- Tomate.\n3.- Jitomate\n4.- Anciano","");
+                        if(op==2){
+                            alert("Respuesta correcta!!!");
+                            op=prompt("Oro parece, palata no es.\nAbran las cortinas,\ny verán lo que es.\n\n1.- Cobre.\n2.- Oro.\n3.- Platano.\n4.- Pera","");
+                            if(op==3){
+                                alert("Respuesta correcta!!!");
+                                op=prompt("Lo come Pancracio,\nestá en el champán;\nsi piensas despacio\n sabrás que es el...\n\n1.- Pan.\n2.- Queso.\n3.- Uvas.\n4.- Jamón","");
+                                if(op==1){
+                                    alert("Respuesta correcta!!!");
+                                    breaK;
+                                }
+                            }else
+                                alert("Respuesta incorrecta :'c");
+                        }else
+                            alert("Respuesta incorrecta :'c");
+                    }else
+                        alert("Respuesta incorrecta :'c");
+                }else
+                    alert("Respuesta incorrecta :'c");
+            }while(op>0||op<4);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
