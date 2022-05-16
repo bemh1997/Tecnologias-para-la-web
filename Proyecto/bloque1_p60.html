@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejemplo Script con formulario</title>
+		<!--archivo: ej6_maquetado_libro_matematicas_con_forumularios.html-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="html, css, maquetado, maquetación, JavaScript"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="Ejemplo de JS con formulario"/>
+		<meta name="robots" content="index"/>
+        <script languaje = "JavaScript">
+            function ValidarCampo(){
+                with (document.formulariobloque1)
+                if(Respuesta1.value==""){
+                    alert("Introduzca la respuesta por favor")
+                    Respuesta1.focus()
+                }
+                else
+                    if((Respuesta1.value>=0)&&(Respuesta2.value>=0)&&(Respuesta3.value>=0)&&(Respuesta4.value!="")&&(Respuesta5.value>=0))
+                        alert("Gracias por responder!")
+                    else
+                        alert("Aun no ha respondido")
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>Evalución final la docena</h1>
+        <hr><br>
+        <img src="pag60.png" alt="bloque1" width="300" height="400"><br>
+        <form name="formulariobloque1">
+            ¿Cuántas cosas hay en tu caja?(Número) <input type="text" name="Respuesta1"> <br>
+            Agrega una cosa más a tu caja. <br>
+            ¿Cuántas cosas hay ahora? (Número)<input type="text" name="Respuesta2"><br>
+            Saca dos cosas de tu caja. ¿Cuántas cosas <br>
+            hay ahora? (Número) <input type="text" name="Respuesta3" ><br>
+            ¿Cómo supieron la cantidad de cosas que hay en su caja <input type="text" name="Respuesta4" ><br>
+            Agrega 10 cosas más a tu caja ¿Cuántas cosas hay ahora? (Número)<input type="text" name="Respuesta5" onblur="ValidarCampo()">
+        </form>
+    </body>
+</html>

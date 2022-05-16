@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Formulario Practica</title>
+		<!--archivo: Formulario Practica.html-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content="Carlos Enrique García Paredes"/>
+		<meta name="keywords" content="Lista, Desordenada, Nombres"/>
+		<meta name="copyright" content="Carlos Enrique García Paredes"/>
+		<meta name="description" content="Ejercicio Listas Desordernadas"/>
+		<meta name="robots" content="index"/>
+
+		<style>
+		</style>
+		
+		<script language="JavaScript">
+			function ValidarCampoUno(){
+				with (document.FormB1_03)
+
+				if(chkYo.checked && chkCompanero.checked){
+					if(Respuesta1.value==""){
+						alert("Introduzca la respuesta Campo 01")
+						Respuesta1.focus()
+					}else if(Respuesta2.value==""){
+						alert("Introduzca la respuesta Campo 02")
+						Respuesta2.focus()
+					}else if(Respuesta1.value == Respuesta2.value){
+						alert("Ambos tienen la misma cantidad de cosas, valido")
+					}else{
+						alert("Discrepancia detectada, corregir")
+					}
+				}else if(chkCompanero.checked){
+					if(Respuesta1.value==""){
+						alert("Introduzca la respuesta Campo 01")
+						Respuesta1.focus()
+					}else if(Respuesta2.value==""){
+						alert("Introduzca la respuesta Campo 02")
+						Respuesta2.focus()
+					}else if(Respuesta1.value < Respuesta2.value){
+						alert("Tu compañer@ tiene más cosas que tu")
+					}else{
+						alert("Discrepancia detectada, corregir")
+					}
+				}else if(chkYo.checked){
+					if(Respuesta1.value==""){
+						alert("Introduzca la respuesta Campo 01")
+						Respuesta1.focus()
+					}else if(Respuesta2.value==""){
+						alert("Introduzca la respuesta Campo 02")
+						Respuesta2.focus()
+					}else if(Respuesta1.value > Respuesta2.value){
+						alert("Tu tienes mas cosas que tu compañer@")
+					}else{
+						alert("Discrepancia detectada, corregir")
+					}
+				}else{
+					alert("Seleccione una opción, CheckBox")
+				}				
+			}
+			function ValidarCampoDos(){
+				with(document.FormB1_03)
+
+				if(Comp01[1].checked){
+					if(Comp02[0].checked){
+						if(Comp03[1].checked){
+							if(Comp04[0].checked){
+								alert("Todas las respuestas correctas")
+							}else{
+								alert("Respuesta 4 incorrecta")
+							}
+						}else{
+							alert("Respuesta 3 incorrecta")
+						}
+					}else{
+						alert("Respuesta 2 incorrecta")
+					}
+				}else{
+					alert("Respuesta 1 incorrecta")
+				}
+			}
+			function ValidarCampoTres(){
+				with(document.FormB1_03)
+
+				if(Respuesta1.value=="" || Respuesta2.value=="" || Respuesta3.value==""){
+					alert("Llene todos los campos")
+				}else if(((Respuesta1.value + Respuesta2.value) > 9) && (Respuesta3.value==1)){
+					alert("Correcto")
+				}else if(((Respuesta1.value + Respuesta2.value) < 9) && (Respuesta3.value==2)){
+					alert("Correcto")
+				}else{
+					alert("Incorrecto")
+				}
+			}
+		</script>
+
+	</head>
+	<body style="text-align:left;background-color:#FFF;">
+		<h1 style="color:#600202;">Trayecto 1 Ejercicio 2</h1>
+		<hr/><br>
+		<img src="pag13.png" alt="bloque 1" width="300" height="400">
+		<br><br><br>
+		<form name="FormB1_03">
+			1. ¿Quién tiene mas cosas?<br>
+			<input type="checkbox" name="chkYo">Yo<br>
+			<input type="checkbox" name="chkCompanero">Mi compañer@<br>
+			<br>
+
+			2. Anota cuantas cosas tienen <br>
+			Yo: <input type="number" name="Respuesta1"><br>
+			Mi Compañero: <input type="number" name="Respuesta2"><br>
+			<br>
+
+			<input type="button" id="comprobar" name="Comprobar" value="Comprobar" onclick="ValidarCampoUno()"><br>
+			<br>
+
+			3. Selecciona quien tiene mas<br>
+			<input type="radio" name="Comp01" value="Luz">Luz<br>
+			<input type="radio" name="Comp01" value="Amanda">Amanda<br>
+			<br>
+			<input type="radio" name="Comp02" value="Cecilia">Cecilia<br>
+			<input type="radio" name="Comp02" value="Óscar">Óscar<br>
+			<br>
+			<input type="radio" name="Comp03" value="Adrián">Adrián<br>
+			<input type="radio" name="Comp03" value="Armando">Armando<br>
+			<br>
+			<input type="radio" name="Comp04" value="Darío">Darío<br>
+			<input type="radio" name="Comp04" value="Jimena">Jimena<br>
+			<br>
+
+			<input type="button" id="comprobar" name="Comprobar" value="Comprobar" onclick="ValidarCampoDos()"><br>
+			<br>
+
+			4. ¿Que pareja tiene mas cosas: tú y tu compañero juntos (1), o Luz y Amanda juntas(2)?<br>
+			<input type="number" name="Respuesta3" max="2" min="1" onblur="ValidarCampoTres()"><br>
+			<br>
+		</form>
+	</body>
+</html> 

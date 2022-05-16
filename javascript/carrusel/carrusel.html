@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html  lang ="es">
+    <head>
+        <title>Ejemplo Carrusel con JavaScript</title>
+		<!--archivo: ejemp_drag.html--> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content="Bernal Mondragon Humberto"/>
+		<meta name="keywords" content="html, img, css, JavaScript"/>
+		<meta name="copyright" content="Bernal Mondragon Humberto"/>
+		<meta name="description" content="Ejemplo de carrusel"/>
+		<meta name="robots" content="index"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css" media="screen">
+            .carousel{
+                max-width: auto;
+                margin: 0 auto;
+                display: flex;
+            }
+
+            #imagen{
+                width: 100%;
+                height: 250px;
+                background-size: cover;
+            }
+        </style>
+        <script>
+            window.onload = function(){
+                let IMAGENES = [
+                    "imagen1_carrusel.jpg",
+                    "imagen2_carrusel.jpg",
+                    "imagen3_carrusel.jpg",
+                    "imagen4_carrusel.jpg"
+                ];
+                const TIEMPO_INTERVALO_MILESIMAS_SEG = 3000;
+                let posicionActual = 0;
+                let $botonRetroceder = document.querySelector('#retroceder');
+                let $botonAvanzar = document.querySelector('#avanzar');
+                let $imagen = document.querySelector('#imagen');
+                let $botonPlay = document.querySelector('#play');
+                let $botonStop = document.querySelector('#stop');
+                let intervalo;
+
+                function pasarFoto(){
+                    if(posicionActual >= IMAGENES.length -1){
+                        posicionActual = 0;
+                    }else{
+                        posicionActual++;
+                    }
+                    renderizarImagen();
+                }
+
+                function retrocederFoto(){
+                    if(posicionActual<=0){
+                        posicionActual = IMAGENES.length-1;
+                    } else{
+                        posicionActual--;
+                    }
+                    renderizarImagen();
+                }
+
+                function renderizarImagen(){
+                    $imagen.style.backgroundImage = `url(${IMAGENES[posicionActual]})`;
+                }
+
+                function playIntervalo(){
+                    intervalo = setInterval(pasarFoto, TIEMPO_INTERVALO_MILESIMAS_SEG);
+                    $botonAvanzar.setAttribute('disabled',true);
+                    $botonRetroceder.setAttribute('disabled',true);
+                    $botonPlay.setAttribute('disabled',true);
+                    $botonStop.removeAttribute('disabled');
+                }
+
+                function stopIntervalo(){
+                    clearInterval(intervalo);
+                    $botonAvanzar.removeAttribute('disabled');
+                    $botonRetroceder.removeAttribute('disabled');
+                    $botonPlay.removeAttribute('disabled');
+                    $botonStop.setAttribute('disabled',true)
+                }
+
+                //Eventos
+                $botonAvanzar.addEventListener('click',pasarFoto);
+                $botonRetroceder.addEventListener('click',retrocederFoto);
+                $botonPlay.addEventListener('click',playIntervalo);
+                $botonStop.addEventListener('click',stopIntervalo);
+
+                //Iniciar
+                renderizarImagen();
+                playIntervalo();
+            }
+        </script>
+    </head>
+    <body style="text-align: center;">
+        <div class="carousel">
+            <button id="retroceder">Retroceder</button>
+            <div id="imagen"></div>
+            <button id="avanzar">Avanzar</button>
+        </div>
+        <div class="controles">
+            <button id="play">Play</button>
+            <button id="stop" disabled>Stop</button>
+        </div>
+    </body>
+</html>

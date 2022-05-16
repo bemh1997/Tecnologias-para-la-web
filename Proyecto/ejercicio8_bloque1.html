@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+        <title>Ejemplo DE Javascript</title>
+            <!--archivo: ejercicio8_bloque1.html-->
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <meta name="author" content="Dario Cante Segura"/>
+        <meta name="keywords" content="Ejercicio Javascript"/>
+        <meta name="copyright" content="Dario Cante Segura"/>
+        <meta name="description" content="Ejercicio para proyecto con javascript"/>
+        <meta name="robots" content="index"/> 
+		<style>
+            	table, tr, td {
+				border: 1px solid red;
+				text-align: center;
+				margin: 0 auto;
+				/*width: 100%;*/
+			}
+		</style>
+        <script languaje="Javascript">
+            function ValidarCampo(){
+                with (document.formularioej8)
+                if(Respuesta1.value==""||Respuesta2.value==""){
+                    alert("Introduzca la respuesta por favor")
+                    Respuesta1.focus()
+                }
+                else
+                if((Respuesta1.value=="Si")&&(Respuesta2.value=="7"))
+                alert("Gracias por responder")
+                else
+                alert("Respuestas Incorrectas, vuelve a revisar")
+            }
+
+        </script>
+	</head>
+	<body>
+        		<!--Tabal 8x13-->
+	<body>
+		<h1 style="text-align:center">Ejemplo de tabla de la diapositiva 57</h1>
+        <img>
+        <table>
+			<tr> <!-- fila 1-->
+				<td>Tubo verde</td>
+                <td>Tubo rojo</td>
+                <td>Cantidad de cosas en la caja</td>
+			</tr>
+            <tr> <!-- fila 2-->
+				<td>2</td>
+                <td>1</td>
+                <td><input type="text" name="caja1" size="2"></br></br> </td>
+			</tr>
+            <tr> <!-- fila 2-->
+				<td>1</td>
+                <td>2</td>
+                <td><input type="text" name="caja2" size="2"></td>
+			</tr>
+            <tr> <!-- fila 3-->
+				<td>3</td>
+                <td>1</td>
+                <td><input type="text" name="caja3" size="2"></td>
+			</tr>
+            <tr> <!-- fila 4-->
+				<td>1</td>
+                <td>3</td>
+                <td><input type="text" name="caja4" size="2"></td>
+			</tr>
+            <tr> <!-- fila 5-->
+				<td>4</td>
+                <td>1</td>
+                <td><input type="text" name="caja5" size="2"></td>
+			</tr>
+            <tr> <!-- fila 6-->
+				<td>1</td>
+                <td>4</td>
+                <td><input type="text" name="caja6" size="2"></td>
+			</tr>
+            <tr> <!-- fila 7-->
+				<td>3</td>
+                <td>2</td>
+                <td><input type="text" name="caja7" size="2"></td>
+			</tr>
+            <tr> <!-- fila 8-->
+				<td>2</td>
+                <td>3</td>
+                <td><input type="text" name="caja8" size="2"></td>
+			</tr>
+            <tr> <!-- fila 9-->
+				<td>4</td>
+                <td>2</td>
+                <td><input type="text" name="caja9" size="2"></td>
+			</tr>
+            <tr> <!-- fila 10-->
+				<td>2</td>
+                <td>4</td>
+                <td><input type="text" name="caja10" size="2"></td>
+			</tr>
+	</table>
+    </br></br>
+        <form name="formularioej8" style="text-align:center">
+            Responda Si o No:</br>
+            1.- ¿Algunos resultados son iguales?<input type="text" name="Respuesta1"></br></br> 
+            2.- ¿Cuantas cosas hay en la caja si por el tuvo verde meto 4 cosas y por el tubo rojo meto 3 cosas?</br></br> 
+            <input type="text" name="Respuesta2" onblur="ValidarCampo()"></br></br> 
+        </form>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Ejemplo de bloque 1</title>
+        <script languaje = "JavaScript">
+            function ValidarCampo(){
+                with (document.formulariobloque1)
+                if(Respuesta1.value==""){
+                    alert("Introduzca la respuesta por favor")
+                    Respuesta1.focus()
+                }
+                else
+                    if((Respuesta1.value=="ejercicios")&&(Respuesta2.value=="si"))
+                        alert("Gracias por responder!")
+                    else
+                        alert("Aun no ha respondido")
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>Bloque 1</h1>
+        <hr><br>
+        <img src="bloque1.png" alt="bloque1" width="400" height="300"><br>
+        <form name="formulariobloque1">
+            ¿Qué hacen las niñas y los niñoas en el salón de clases? <input type="text" name="Respuesta1"> <br>
+            ¿Conoces juegos con números o con figuras? <input type="text" name="Respuesta2" onblur="ValidarCampo()"><br>
+        </form>
+    </body>
+</html>
